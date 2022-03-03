@@ -1,0 +1,62 @@
+<style>
+  * {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    background-image: url("https://i.imgur.com/CKuj93j.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  table {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    border-radius: 5px;
+
+    background: rgba(255, 255, 255, 0.88);
+    max-width: 275px;
+    min-width: 275px;
+    border: 2px solid rgba(128, 128, 128, 0.15);
+    border-radius: 5px;
+  }
+  th {
+    background-color: #009879;
+
+    padding: 5px;
+    color: #ffffff;
+    /* text-align: left; */
+    border-radius: 4px;
+  }
+  td {
+    padding: 5px 5px;
+  }
+  tr {
+    text-align: center;
+  }
+</style>
+<title>Skill</title>
+<h1>Skill</h1>
+
+<table>
+  <tr>
+    <th>Skill</th>
+    <th>Experience</th>
+    <th>Proficiency</th>
+  </tr>
+
+  <tr>
+    <td><%= data.skill %></td>
+    <td><%= data.time %></td>
+    <td><%= data.proficiency %></td>
+  </tr>
+</table>
