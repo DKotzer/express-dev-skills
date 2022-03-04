@@ -14,11 +14,10 @@ const skillsRouter = require("./routes/skills");
 
 app.use("/", indexRouter);
 app.use("/", skillsRouter);
-app.use("public/css", express.static(__dirname + "public/css"));
+// app.use("public/css", express.static(__dirname + "public/css"));
 
 app.listen(port, function () {
   // tells the server where to listen for requests on port 2000
-
   console.log(`hello-express is listening on port ${port}`);
 });
 

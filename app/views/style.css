@@ -1,4 +1,4 @@
-<style>* {
+* {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -17,20 +17,17 @@ body {
   justify-content: center;
 }
 table {
-  
   display: flex;
   align-self: center;
   justify-content: space-around;
   border-radius: 5px;
 
   background: rgba(255, 255, 255, 0.88);
-  max-width: 350px;
+  max-width: 275px;
   min-width: 275px;
   border: 2px solid rgba(128, 128, 128, 0.15);
   border-radius: 5px;
 }
-
-
 th {
   background-color: #009879;
 
@@ -45,46 +42,3 @@ td {
 tr {
   text-align: center;
 }
-</style>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="style.css">
-  <title>Skills</title>
-</head>
-<body>
-  
-  
-    <h1>Skills</h1>
-<div class="skills"></div>
-    <table>
-      <tr>
-        <th>Skill</th>
-        <th>Experience</th>
-        <th>Proficiency</th>
-      </tr>
-
-      <% data.forEach(function(data, index){ %>
-
-      <tr>
-        <td><%= data.skill %></td>
-        <td><%= data.time %></td>
-        <td><%= data.proficiency %></td>
-        
-      
-      </tr>
-      <% }) %>
-    </table>
-  </div>
-
-</body>
-</html>
-
-
-
