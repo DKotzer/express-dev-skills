@@ -21,10 +21,10 @@ app.listen(port, function () {
   console.log(`hello-express is listening on port ${port}`);
 });
 
-app.get("/", function (req, res) {
-  res.send("Hello World");
-  // when a request comes in at localhost:2000, it will respond
-});
+// app.get("/", function (req, res) {
+//   res.send("Hello World");
+//   // when a request comes in at localhost:2000, it will respond
+// });
 
 // app.get( funcion(req, res){
 

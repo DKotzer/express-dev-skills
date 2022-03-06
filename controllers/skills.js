@@ -37,7 +37,8 @@ exports.skill_create_post = function (req, res) {
 //   res.render("../app/views/skills.ejs", { data: skills });
 // };
 
-exports.skills_delete_get = function (req, res) {
+exports.skill_delete_get = function (req, res) {
   skills.splice(req.query.id, 1);
   res.render("../app/views/skills.ejs", { data: skills });
+  // res.redirect("/skills");
 };
