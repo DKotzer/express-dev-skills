@@ -1,8 +1,72 @@
-<style>
-    input{
-        border-radius: 5px;
-        margin-bottom: 2px;
-    }
+<style>* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-image: url("https://i.imgur.com/CKuj93j.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skills {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.88);
+  max-width: 350px;
+  min-width: 275px;
+  border: 2px solid rgba(128, 128, 128, 0.15);
+  border-radius: 5px;
+}
+
+
+th {
+  background-color: #009879;
+
+  padding: 5px;
+  color: #ffffff;
+  /* text-align: left; */
+  border-radius: 4px;
+}
+td {
+  padding: 5px 5px;
+}
+tr {
+  text-align: center;
+}
+
+.newSkill {
+  position: center;
+  left: 130px;
+  margin-top: 5px;
+  border: 3px solid #226fbe;
+  border-radius: 15px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #2270be34;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.newSkill:hover {
+  border: 3px solid #226fbe;
+  background-color: #2270bebb;
+}
+input{
+  font-size: 25px;
+}
+
 </style>
 
 <h1>Add New Skill</h1>
