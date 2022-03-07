@@ -1,8 +1,8 @@
 let skills = [
-  { skill: "MEAN", time: "4 years", proficiency: "high" },
-  { skill: "Python", time: "7 years", proficiency: "high" },
-  { skill: "AWS", time: "2 years", proficiency: "high" },
-  { skill: "Rust", time: "1 year", proficiency: "medium" },
+  { skill: "MEAN", time: "4 years", proficiency: "high", index: 0 },
+  { skill: "Python", time: "7 years", proficiency: "high", index: 1 },
+  { skill: "AWS", time: "2 years", proficiency: "high", index: 2 },
+  { skill: "Rust", time: "1 year", proficiency: "medium", index: 3 },
 ];
 
 //use skills array to populate skills.ejs
@@ -28,6 +28,7 @@ exports.skill_create_post = function (req, res) {
     skill: req.body.skill,
     time: req.body.time,
     proficiency: req.body.proficiency,
+    index: skills.length,
   });
   res.redirect("/skills");
 };
@@ -38,7 +39,8 @@ exports.skill_create_post = function (req, res) {
 // };
 
 exports.skill_delete_get = function (req, res) {
+  console.log("debug: " + JSON.stringify(req.query.id));
   skills.splice(req.query.id, 1);
-  res.render("../app/views/skills.ejs", { data: skills });
-  // res.redirect("/skills");
+  // res.render("../app/views/skills.ejs", { data: skills });
+  res.redirect("/skills");
 };

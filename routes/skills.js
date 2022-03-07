@@ -17,7 +17,7 @@ router.get("/newSkill", skillsCtrl.skill_create_get);
 router.post("/newSkill", skillsCtrl.skill_create_post);
 
 //delete skill
-router.get("/skills/delete", skillsCtrl.skill_delete_get);
+router.get("/skill/delete", skillsCtrl.skill_delete_get);
 // router.get("/skills/delete", skillsCtrl.skills_delete_get);
 
 module.exports = router;

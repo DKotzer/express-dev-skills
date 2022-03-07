@@ -25,7 +25,3 @@ app.listen(port, function () {
 //   res.send("Hello World");
 //   // when a request comes in at localhost:2000, it will respond
 // });
-
-// app.get( funcion(req, res){
-
-// });

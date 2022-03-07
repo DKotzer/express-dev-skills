@@ -55,11 +55,11 @@
   </tr>
 
   <tr>
-    <td><%= data.skill %></td>
-    <td><%= data.time %></td>
-    <td><%= data.proficiency %></td>
+    <td><%=data.skill %></td>
+    <td><%=data.time %></td>
+    <td><%=data.proficiency %></td>
     <td>
-      <a href="/skills/delete?id=0">Delete</a>
+      <a href="/skill/delete?id=<%=data.index%>">Delete</a>
     </td>
   </tr>
 </table>
