@@ -1,48 +1,72 @@
 <style>
-  * {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
 
-    text-align: center;
-    background-image: url("https://i.imgur.com/CKuj93j.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .skills {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  table {
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-    border-radius: 5px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/CKuj93j.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skills {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  border-radius: 5px;
 
-    background: rgba(255, 255, 255, 0.88);
-    max-width: 275px;
-    min-width: 275px;
-    border: 2px solid rgba(128, 128, 128, 0.15);
-    border-radius: 5px;
-  }
-  th {
-    background-color: #009879;
+  background: rgba(255, 255, 255, 0.958);
+  max-width: 800px;
+  min-width: 275px;
+  border: 2px solid rgba(128, 128, 128, 0.15);
+  border-radius: 5px;
+}
 
-    padding: 5px;
-    color: #ffffff;
-    /* text-align: left; */
-    border-radius: 4px;
-  }
-  td {
-    padding: 5px 5px;
-  }
-  tr {
-    text-align: center;
-  }
+
+th {
+  background-color: #009879;
+
+  padding: 5px;
+  color: #ffffff;
+  /* text-align: left; */
+  border-radius: 4px;
+}
+td {
+  padding: 5px 5px;
+}
+tr {
+  text-align: center;
+}
+
+.newSkill {
+  position: center;
+  left: 130px;
+  margin-top: 5px;
+  border: 3px solid #226fbe;
+  border-radius: 15px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #2270bee5;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.newSkill:hover {
+  border: 3px solid #226fbe;
+  background-color: #2270be38;
+}
+
+
 </style>
 <title>Skill</title>
 <h1>Skill</h1>
@@ -55,6 +79,7 @@
   </tr>
 
   <tr>
+    
     <td><%=data.skill %></td>
     <td><%=data.time %></td>
     <td><%=data.proficiency %></td>
